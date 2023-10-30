@@ -1,0 +1,33 @@
+[tool.poetry]
+name = "oracul-telegrambot"
+version = "0.1.0"
+description = ""
+authors = ["BazZziliuS"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.11"
+aiogram = "^3.1.1"
+beautifulsoup4 = "^4.12.2"
+aiohttp = "^3.8.6"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
+
+[tool.ruff]
+# Enable flake8-bugbear (`B`) rules.
+select = ["E", "F", "B"]
+
+# Never enforce `E501` (line length violations).
+ignore = ["E501", "E701", "E401"]
+
+# Avoid trying to fix flake8-bugbear (`B`) violations.
+unfixable = ["B"]
+
+# Ignore `E402` (import violations) in all `__init__.py` files, and in `path/to/file.py`.
+[tool.ruff.per-file-ignores]
+"__init__.py" = ["E402"]
+"path/to/file.py" = ["E402"]
+"**/{tests,docs,tools}/*" = ["E402"]
