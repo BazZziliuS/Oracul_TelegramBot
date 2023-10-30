@@ -9,3 +9,4 @@
 ## Описание проекта
 
 Телеграм бот для получения гороскопа
+Парсит информацию с сайта https://orakul.com/horoscope/astrologic/more/pisces/today.html
